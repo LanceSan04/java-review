@@ -21,6 +21,15 @@ public class App1 {
      * What if damage was a double, but health was an int?
      */
     public static void main(String[] args) {
-
+    String name = "Lance";
+    int attack = 23;
+    int defense = 3;
+    int damage = attack - defense;
+    int hp = 20;
+    if (damage < 0) {
+        damage = 0;
+    }
+    int currentHp = hp - damage;
+    System.out.println(name + " lost " + damage + " HP and is now " + currentHp + " HP");
     }
 }
